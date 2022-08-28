@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--    tools:context=".page3">-->
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MAp"
+        />
+
+    <ImageButton
+        android:id="@+id/locat"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_alignRight="@id/map"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/location" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="350sp"
+        android:layout_marginRight="10sp"
+        android:background="@color/offwhite"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--<androidx.viewpager.widget.ViewPager-->
+            <!--    android:layout_width="wrap_content"-->
+            <!--    android:layout_height="100sp"-->
+            <!--    android:id="@+id/imgview"/>-->
+
+            <ImageView
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:padding="10dp"
+                android:src="@drawable/dh"
+                android:id="@+id/img1"/>
+
+            <ImageView
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:src="@drawable/dhruv"
+                android:id="@+id/img2"/>
+
+            <Button
+                android:id="@+id/upl"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:text="Upload img" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:background="@color/teal_200"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="150sp"
+                android:layout_height="50sp"
+                android:layout_marginRight="30dp"
+                android:text="Om Parking"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:layout_width="100sp"
+                android:layout_height="50sp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="50sp"
+                android:background="@color/teal_200"
+                android:text="Book"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="near shakti ma mandir, atman flats,Om Parking Center"
+            android:textSize="20dp" />
+
+        <RatingBar
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:scaleY="0.5"
+            android:scaleX="0.5" />
+        <Button
+            android:layout_width="50sp"
+            android:layout_height="50sp"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dhruvcopy"
+    >
+
+<!--    tools:context=".MainActivity">-->
+
+    <EditText
+        android:id="@+id/EmailAddress"
+        android:layout_width="299dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="75sp"
+        android:drawableStart="@drawable/name"
+        android:ems="11"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="126dp"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="304dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25sp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:drawableLeft="@drawable/lock"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="174dp"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/forgetpswd"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginLeft="200sp"
+        android:layout_marginTop="20sp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/forgot_password"
+        android:textColor="#87CEEB"
+        android:textSize="19dp"
+        tools:layout_editor_absoluteX="230dp"
+        tools:layout_editor_absoluteY="226dp" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        android:text="@string/Login"
+        android:textSize="20dp"
+
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="308dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Map"
+        android:text="Map"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15sp"
+        android:layout_marginRight="10sp"
+        android:layout_weight="0"
+        android:rotationX="8"
+        android:text="No of attemps"
+        android:textColor="#616161" />
+
+    <LinearLayout
+        android:layout_width="391dp"
+        android:layout_height="211dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="100sp"
+            android:text="Don't have an account?"
+            tools:layout_editor_absoluteX="66dp"
+            tools:layout_editor_absoluteY="506dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100sp"
+            android:layout_marginRight="90sp"
+            android:text="@string/register"
+            android:textColor="#00099f"
+            android:textSize="25sp"
+            tools:layout_editor_absoluteX="212dp"
+            tools:layout_editor_absoluteY="506dp" />
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
